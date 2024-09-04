@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  
+  post 'book_recommendations', to: 'book_recommendations#generate'
 end
