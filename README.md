@@ -145,3 +145,9 @@ Gera recomendações de livros para um usuário com base nas preferências forne
     }
   ]
 }
+```
+
+Após executar o contêiner, a API estará disponível em:
+```
+http://localhost:3000
+```
