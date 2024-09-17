@@ -28,8 +28,10 @@ Execute o contêiner Docker:
 ```
 docker run -p 3000:3000 --env-file .env ai_api
 ```
-
-
+Após executar o contêiner, a API estará disponível em:
+```
+http://localhost:3000
+```
 ## Endpoints
 
 ### POST /book_recommendations
@@ -145,9 +147,4 @@ Gera recomendações de livros para um usuário com base nas preferências forne
     }
   ]
 }
-```
-
-Após executar o contêiner, a API estará disponível em:
-```
-http://localhost:3000
 ```
