@@ -1,0 +1,13 @@
+version: '3'
+services:
+  api:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec puma -C config/puma.rb"
+    volumes:
+      - ".:/app"
+      - "db-data:/app/db"  # Monta o volume do banco de dados
+    ports:
+      - "3000:3000"
+
+volumes:
+  db-data:
